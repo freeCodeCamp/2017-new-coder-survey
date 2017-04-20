@@ -9,8 +9,8 @@ You can [discuss this dataset in freeCodeCamp's Data Science Gitter chatroom](ht
 
 As of April 11, 2017, only the raw CSV dump has been uploaded (exported directly from Typeform).
 
-1. 2017-new-coder-survey-part-1.csv - the first half of the survey. 100% of respondants completed this section.
-2. 2017-new-coder-survey-part-2.csv - the first half of the survey, plus the second half - which about 95% of respondants also completed.
+1. [2017-new-coder-survey-part-1.csv](https://github.com/freeCodeCamp/2017-new-coder-survey/blob/master/raw-data/2017-new-coder-survey-part-1.csv) - the first half of the survey. 100% of respondants completed this section.
+2. [2017-new-coder-survey-part-2.csv](https://github.com/freeCodeCamp/2017-new-coder-survey/blob/master/raw-data/2017-new-coder-survey-part-2.csv) - the first half of the survey, plus the second half - which about 95% of respondants also completed.
 
 # License
 
