@@ -1,0 +1,850 @@
+{
+  "name": "2017-new-coder-survey",
+  "title": "2017 New Coder Survey",
+  "description": "freeCodeCamp's new coder data including survey data on demographic information and coding related activities",
+  "homepage": "https://github.com/freeCodeCamp/2017-new-coder-survey",
+  "version": "0.0.1",
+  "license": "Open Database License",
+  "author": {
+    "name": "Eric Leung",
+    "web": "https://erictleung.com"
+  },
+  "resources": [
+    {
+      "name": "2017-fcc-new-coders-survey-data.csv",
+      "title": "2017 fCC New Coders Survey Data",
+      "description": "A single combined file, comprised of the two-part new coders' survey conducted by freeCodeCamp.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Age",
+            "title": "Age of Individual",
+            "description": "The question asked was \"How old are you?\"",
+            "type": "integer"
+          },
+          {
+            "name": "AttendedBootcamp",
+            "title": "Attended a Bootcamp",
+            "description": "The question asked was \"Have you attended a full time coding bootcamp?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "BootcampFinish",
+            "title": "Finished a Bootcamp or Not",
+            "description": "The question asked was \"Have you finished [your coding bootcamp]?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "BootcampLoanYesNo",
+            "title": "Bootcamp Loan Yes or No",
+            "description": "The question asked was \"Did you take out a loan to pay for the bootcamp?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "BootcampName",
+            "title": "Bootcamp Name",
+            "description": "The question asked was \"Which [coding bootcamp]?\"",
+            "type": "string"
+          },
+          {
+            "name": "BootcampRecommend",
+            "title": "Bootcamp Recommendation",
+            "description": "The question asked was \"Based on your experience, would you recommend this bootcamp to your friends?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ChildrenNumber",
+            "title": "Number of Children",
+            "description": "The question asked was \"How many children do you have?\"",
+            "type": "integer"
+          },
+          {
+            "name": "CityPopulation",
+            "title": "Estimated City Population",
+            "description": "The question asked was \"About how many people live in your city?\"",
+            "type": "string"
+          },
+          {
+            "name": "CodeEventConferences",
+            "title": "Code Event Conferences",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventDjangoGirls",
+            "title": "Code Event Django Girls",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventFCC",
+            "title": "Code Event freeCodeCamp",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventGameJam",
+            "title": "Code Event Game Jam",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventGirlDev",
+            "title": "Code Event Girl Develop It",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventHackathons",
+            "title": "Code Event Hackathons",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventMeetup",
+            "title": "Code Event Meetup.com Events",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventNodeSchool",
+            "title": "Code Event NodeSchool",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventNone",
+            "title": "Code Event None",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventOther",
+            "title": "Code Event (Other)",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\" and answer was not given in list",
+            "type": "string"
+          },
+          {
+            "name": "CodeEventRailsBridge",
+            "title": "Code Event RailsBridge",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventRailsGirls",
+            "title": "Code Event Rails Girls",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventStartUpWknd",
+            "title": "Code Event Startup Weekend",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventWkdBootcamps",
+            "title": "Code Event Weekend Bootcamps",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventWomenCode",
+            "title": "Code Event Women Who Code",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CodeEventWorkshops",
+            "title": "Code Event Workshops",
+            "description": "The question asked was \"If you have attended in-person-related events before, which ones have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "CommuteTime",
+            "title": "Commute Time to Work",
+            "description": "The question asked was \"About how many minutes does it take you to get to work each day\"",
+            "type": "string"
+          },
+          {
+            "name": "CountryCitizen",
+            "title": "Country Citizen",
+            "description": "The question asked was \"Which country are you a citizen of?\"",
+            "type": "string"
+          },
+          {
+            "name": "CountryLive",
+            "title": "Country Live",
+            "description": "The question asked was \"Which country do you currently live in?\"",
+            "type": "string"
+          },
+          {
+            "name": "EmploymentField",
+            "title": "Employment Field",
+            "description": "The question asked was \"Which field do you work in?\"",
+            "type": "string"
+          },
+          {
+            "name": "EmploymentFieldOther",
+            "title": "Employment Field (Other)",
+            "description": "The question asked was \"Which field do you work in?\" and answer was not given in list",
+            "type": "string"
+          },
+          {
+            "name": "EmploymentStatus",
+            "title": "Employment Status",
+            "description": "The question asked was \"Regarding employment status, are you currently...\"",
+            "type": "string"
+          },
+          {
+            "name": "EmploymentStatusOther",
+            "title": "Employment Status (Other)",
+            "description": "The question asked was \"Regarding employment status, are you currently...\"  and answer was not given in list",
+            "type": "string"
+          },
+          {
+            "name": "ExpectedEarning",
+            "title": "Expected Yearly Job Earnings",
+            "description": "The question asked was \"About how much money do you expect to earn per year at your first developer job, in US dollars?",
+            "type": "integer"
+          },
+          {
+            "name": "FinanciallySupporting",
+            "title": "Financially Supporting Elderly",
+            "description": "The question asked was \"Do you financially support any elderly relatives or relatives with disabilities?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "FirstDevJob",
+            "title": "First Developer Job",
+            "description": "The question asked was \"Is this your first software development job?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "Gender",
+            "title": "Gender",
+            "description": "The question asked was \"What's your gender?\"",
+            "type": "string"
+          },
+          {
+            "name": "GenderOther",
+            "title": "Gender (Other)",
+            "description": "The question asked was \"What's your gender?\" and answer was not given in list",
+            "type": "string"
+          },
+          {
+            "name": "HasChildren",
+            "title": "Having Children or Not",
+            "description": "The question asked was \"Do you have children?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "HasDebt",
+            "title": "Having Debt or Not",
+            "description": "The question asked was \"Do you have any debt?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "HasFinancialDependents",
+            "title": "Having Financial Dependents or Not",
+            "description": "The question asked was \"Do you financially support any dependents?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "HasHighSpdInternet",
+            "title": "Having High Speed Internet or Not",
+            "description": "The question asked was \"Do you have high speed internet at your home?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "HasHomeMortgage",
+            "title": "Having Home Mortgage or Not",
+            "description": "The question asked was \"Do you have a home mortgage?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "HasServedInMilitary",
+            "title": "Having Served In Military or Not",
+            "description": "The question asked was \"Have you served in your country's military before?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "HasStudentDebt",
+            "title": "Having Student Debt or Not",
+            "description": "The question asked was \"Do you have student loan debt?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "HomeMortgageOwe",
+            "title": "Amount of Home Mortgage Owed",
+            "description": "The question asked was \"About how much do you owe on your home mortgage, in US dollars?\"",
+            "type": "integer"
+          },
+          {
+            "name": "HoursLearning",
+            "title": "Hours Spent Learning Per Week",
+            "description": "The question asked was \"About how many hours do you spend learning each week?\"",
+            "type": "integer"
+          },
+          {
+            "name": "ID.x",
+            "title": "Unique Identifier Part 1",
+            "description": "Unique identifier from the first part of the survey",
+            "type": "string"
+          },
+          {
+            "name": "ID.y",
+            "title": "Unique Identifier Part 2",
+            "description": "Unique identifier from the second part of the survey",
+            "type": "string"
+          },
+          {
+            "name": "Income",
+            "title": "Estimated Income in 2016",
+            "description": "The question asked was \"About how much money did you make last year, in US dollars?\"",
+            "type": "integer"
+          },
+          {
+            "name": "IsEthnicMinority",
+            "title": "Is Ethnic Minority or Not",
+            "description": "The question asked was \"Are you an ethnic minority in your country?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "IsReceiveDisabilitiesBenefits",
+            "title": "Is Receiving Disabilities Benefits or Not",
+            "description": "The question asked was \"Do you receive disability benefits from your government?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "IsSoftwareDev",
+            "title": "Is Software Developer or Not",
+            "description": "The question asked was \"Are you already working as a software developer?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "IsUnderEmployed",
+            "title": "Is Under Employed or Not",
+            "description": "The question asked was \"Do you consider yourself under employed?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobApplyWhen",
+            "title": "Applying to Jobs When",
+            "description": "The question asked was \"When do you plan to start applying for developer jobs?\"",
+            "type": "string"
+          },
+          {
+            "name": "JobInterestBackEnd",
+            "title": "Job Interest in Being a Back End Developer",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestDataEngr",
+            "title": "Job Interest in Being a Data Engineer",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestDataSci",
+            "title": "Job Interest in Being a Data Scientist",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestDevOps",
+            "title": "Job Interest in Doing Dev Ops",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestFrontEnd",
+            "title": "Job Interest in Being a Front End Developer",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestFullStack",
+            "title": "Job Interest in Being a Full Stack Developer",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestGameDev",
+            "title": "Job Interest in Being a Game Developer",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestInfoSec",
+            "title": "Job Interest in Doing Infomation Security",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestMobile",
+            "title": "Job Interest in Being a Mobile Developer",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestOther",
+            "title": "Job Interest (Other)",
+            "description": "The question asked was \"Which one of these careers are your interested in?\" and answer was not given in list",
+            "type": "string"
+          },
+          {
+            "name": "JobInterestProjMngr",
+            "title": "Job Interest in Being a Project Manager",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestQAEngr",
+            "title": "Job Interest in Being a Quality Assurance Engineer",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobInterestUX",
+            "title": "Job Interest in Being a User Experience Designer",
+            "description": "The question asked was \"Which one of these careers are your interested in?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobPref",
+            "title": "Job Preference",
+            "description": "The question asked was \"Would you prefer to...\"",
+            "type": "string"
+          },
+          {
+            "name": "JobRelocateYesNo",
+            "title": "Okay with Job Relocation Yes or Not",
+            "description": "The question asked was \"Are you willing to relocate for a job?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "JobRoleInterest",
+            "title": "Job Role Interest from Second Part of the Survey",
+            "description": "The question asked was \"Which one of these careers are you interested in?\" and this is a string of the multiple answers possibly given. This string comes from the second dataset. This column was kept in order to double check the other columns.",
+            "type": "string"
+          },
+          {
+            "name": "JobWherePref",
+            "title": "Job Preference on Site of Work",
+            "description": "The question asked was \"Would you prefer to...\" and answers range from working at home to having no preference.",
+            "type": "string"
+          },
+          {
+            "name": "LanguageAtHome",
+            "title": "Language Spoken At Home",
+            "description": "The question asked was \"Which language do you speak at home with your family?\"",
+            "type": "string"
+          },
+          {
+            "name": "MaritalStatus",
+            "title": "Marital Status",
+            "description": "The question asked was \"What's your marital status?\"",
+            "type": "string"
+          },
+          {
+            "name": "MoneyForLearning",
+            "title": "Money Spent For Learning",
+            "description": "The question asked was \"Aside from university tuition, about how much money have you spent on learning to code so far, in US dollars?\"",
+            "type": "integer"
+          },
+          {
+            "name": "MonthsProgramming",
+            "title": "Months Spent Programming Since the Beginning",
+            "description": "The question asked was \"About how many months have you been programming for?\"",
+            "type": "integer"
+          },
+          {
+            "name": "NetworkID",
+            "title": "Network ID",
+            "description": "Unique ID for the network the survey was completed on",
+            "type": "string"
+          },
+          {
+            "name": "Part1EndTime",
+            "title": "Part 1 End Time",
+            "description": "The date time for when the first part of the survey ended",
+            "type": "datetime"
+          },
+          {
+            "name": "Part1StartTime",
+            "title": "Part 1 Start Time",
+            "description": "The date time for when the first part of the survey was started",
+            "type": "datetime"
+          },
+          {
+            "name": "Part2EndTime",
+            "title": "Part 2 End Time",
+            "description": "The date time for when the second part of the survey ended",
+            "type": "datetime"
+          },
+          {
+            "name": "Part2StartTime",
+            "title": "Part 2 Start Time",
+            "description": "The date time for when the second part of the survey was started",
+            "type": "datetime"
+          },
+          {
+            "name": "PodcastChangeLog",
+            "title": "Podcast The Changelog",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastCodeNewbie",
+            "title": "Podcast Code Newbie",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastCodePen",
+            "title": "Podcast CodePen Radio",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastDevTea",
+            "title": "Podcast Developer Tea",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastDotNET",
+            "title": "Podcast .NET Rocks",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastGiantRobots",
+            "title": "Podcast Giant Robots Smashing into Other Giant Robots",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastJSAir",
+            "title": "Podcast JavaScript Air",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastJSJabber",
+            "title": "Podcast JavaScript Jabber",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastNone",
+            "title": "Podcast None",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastOther",
+            "title": "Podcast (Other)",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\" and answer was not given in list",
+            "type": "string"
+          },
+          {
+            "name": "PodcastProgThrowdown",
+            "title": "Podcast Programming Throwdown",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastRubyRogues",
+            "title": "Podcast Ruby Rogues",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastSEDaily",
+            "title": "Podcast Software Engineering Daily",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastSERadio",
+            "title": "Podcast Software Engineering Radio",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastShopTalk",
+            "title": "Podcast Shop Talk Show",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastTalkPython",
+            "title": "Podcast Talk Python to Me",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "PodcastTheWebAhead",
+            "title": "Podcast The Web Ahead",
+            "description": "The question asked was \"If you have listened to coding-related podcasts before, which ones have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceCodecademy",
+            "title": "Resource Codecademy",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceCodeWars",
+            "title": "Resource Code Wars",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceCoursera",
+            "title": "Resource Coursera",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceCSS",
+            "title": "Resource CSS Tricks",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceEdX",
+            "title": "Resource EdX",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceEgghead",
+            "title": "Resource Egghead.io",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceFCC",
+            "title": "Resource freeCodeCamp",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceHackerRank",
+            "title": "Resource HackerRank",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceKA",
+            "title": "Resource Khan Academy",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceLynda",
+            "title": "Resource Lynda.com",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceMDN",
+            "title": "Resource Mozilla Developer Network (MDN)",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceOdinProj",
+            "title": "Resource The Odin Project",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceOther",
+            "title": "Resource (Other)",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\" and the answer was not given in list",
+            "type": "string"
+          },
+          {
+            "name": "ResourcePluralSight",
+            "title": "Resource Pluralsight/Code School",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceSkillcrush",
+            "title": "Resource Skillcrush",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceSO",
+            "title": "Resource Stack Overflow",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceTreehouse",
+            "title": "Resource Treehouse",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceUdacity",
+            "title": "Resource Udacity",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceUdemy",
+            "title": "Resource Udemy",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "ResourceW3S",
+            "title": "Resource W3Schools",
+            "description": "The question asked was \"Which online learning resources have you found helpful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "SchoolDegree",
+            "title": "School Degree",
+            "description": "The question asked was \"What's the highest degree or level of school you have completed?\"",
+            "type": "string"
+          },
+          {
+            "name": "SchoolMajor",
+            "title": "School Major",
+            "description": "The question asked was \"What was the main subject you studied in university?\"",
+            "type": "string"
+          },
+          {
+            "name": "StudentDebtOwe",
+            "title": "Student Debt Owe",
+            "description": "The question asked was \"About how much do you owe in student loans, in US dollars?\"",
+            "type": "integer"
+          },
+          {
+            "name": "YouTubeCodeCourse",
+            "title": "YouTube CodeCourse",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeCodingTrain",
+            "title": "YouTube Coding Train (Coding Rainbow)",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeCodingTut360",
+            "title": "YouTube Coding Tutorial 360",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeComputerphile",
+            "title": "YouTube Computerphile",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeDerekBanas",
+            "title": "YouTube Derek Banas",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeDevTips",
+            "title": "YouTube DevTips",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeEngineeredTruth",
+            "title": "YouTube Engineered Truth",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeFCC",
+            "title": "YouTube freeCodeCamp",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeFunFunFunction",
+            "title": "YouTube funfunfunction",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeGoogleDev",
+            "title": "YouTube Google Developers",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeLearnCode",
+            "title": "YouTube LearnCode.Academy",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeLevelUpTuts",
+            "title": "YouTube LevelUpTuts",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeMIT",
+            "title": "YouTube MIT Open Courseware",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeMozillaHacks",
+            "title": "YouTube Mozilla Hacks",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeOther",
+            "title": "YouTube (Other)",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\" and answer was not given in list",
+            "type": "string"
+          },
+          {
+            "name": "YouTubeSimplilearn",
+            "title": "YouTube Simplilearn",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          },
+          {
+            "name": "YouTubeTheNewBoston",
+            "title": "YouTube The New Boston",
+            "description": "The question asked was \"If you have watched coding-related YouTube videos before, which channels have you found useful?\"",
+            "type": "boolean"
+          }
+        ]
+      },
+      "path": "./2017-fCC-New-Coders-Survey-Data.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8"
+    }
+  ],
+  "keywords": [
+    "survey",
+    "freeCodeCamp",
+    "coding",
+    "programming",
+    "new coder"
+  ]
+}
